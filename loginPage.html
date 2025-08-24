@@ -7,20 +7,22 @@
     <link rel="shortcut icon" href="images/icon/DOM_icon.png" type="image/x-icon">
     <title>Login DOM</title>
 </head>
-<body>
-    <div id="mainLogin">
-        <form autocomplete="off" method="post" action="cadastro.php">
-            <div class="loginUser">
-               
-                <input type="text" name="loginUser" id="idLoginUser" required placeholder="Nome do usuário">
-            </div>
-            <div class="passwordUser">
-                <input type="password" name="" id="idPassowordUser" required placeholder="Mínimo 6 digítos">
-            </div>
-            <div class="submitUser">
-                <input type="submit" value="Login">
-            </div>
-        </form>
-    </div>
-</body>
+<div id="bodyLogin">
+    <div id="corTopBodyLogin"></div>
+    <form autocomplete="off" method="post" action="cadastro.php">
+        <img src="images/logo/DOM_logo_300.png" alt="">
+        <div class="loginUser">
+            <label for="idLoginUser">NOME</label>
+            <input type="text" name="loginUser" id="idLoginUser" required placeholder="Nome do usuário">
+        </div>
+        <div class="passwordUser">
+            <label for="idPassowordUser">SENHA</label>
+            <input type="password" name="" id="idPassowordUser" required placeholder="Mínimo 6 digítos" minlength="6">
+        </div>
+        <div class="submitUser">
+            <input type="submit" value="LOGIN">
+        </div>
+    </form>
+     <div id="corBottomBodyLogin"></div>
+</div>
 </html>

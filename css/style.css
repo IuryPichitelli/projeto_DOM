@@ -11,6 +11,8 @@
     --cor-primaria: #A76D2B;
     --cor-secundaria: #000000;
     --cor-segundaria-hover:#111111;
+    --cor-button-login: rgb(0, 94, 216);
+    --cor-button-login-hover: rgb(32, 128, 255);
     --cor-font: white;
 
     /* fontes*/
@@ -152,10 +154,71 @@ footer{
 /*               PAGE LOGIN              */
 /* ************************************* */
 
-#mainLogin{
+#bodyLogin{
+    justify-items: center;
     
 }
 
+#corTopBodyLogin{
+    background-color: var(--cor-primaria);
+    height: 50vh;
+    width: 100%;
+    display: block;
+}
+
+#corBottomBodyLogin{
+    background-color: var(--cor-secundaria);
+    height: 50vh;
+    width: 100%;
+    display: block;
+}
+
+#mainLogin{
+    margin: 0 auto;
+    height: 100%;
+}
+
+form{
+    
+    width: 500px;
+    height: 450px;
+    background-color: var(--cor-background);
+    border-radius: 10px;
+    position: absolute;
+    top: 250px;
+}
+
+form [ type="submit"] , [type="password"] , [ type="text"]{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+}
+
+form [ type="submit"]{
+    background-color: var(--cor-button-login);
+    color: var(--cor-font);
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+form [ type="submit"]:active{
+    transform: scale(.97);
+}
+
+form [ type="submit"]:hover{
+    background-color: var(--cor-button-login-hover);
+}
+
+form img{
+    display: block;
+    margin: 20px auto;
+    height: 150px;
+}
 
 
 
