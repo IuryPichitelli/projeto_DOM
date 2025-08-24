@@ -150,6 +150,12 @@ footer{
 /*               SCROLL BAR              */
 /* ************************************* */
 
+
+
+
+
+
+
 /* ************************************* */
 /*               PAGE LOGIN              */
 /* ************************************* */
@@ -166,6 +172,7 @@ footer{
     display: block;
 }
 
+
 #corBottomBodyLogin{
     background-color: var(--cor-secundaria);
     height: 50vh;
@@ -178,14 +185,16 @@ footer{
     height: 100%;
 }
 
+/* form */
+
 form{
-    
     width: 500px;
     height: 450px;
-    background-color: var(--cor-background);
+    background-color: white;
     border-radius: 10px;
-    position: absolute;
+    position: fixed;
     top: 250px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.363);
 }
 
 form [ type="submit"] , [type="password"] , [ type="text"]{
@@ -197,6 +206,18 @@ form [ type="submit"] , [type="password"] , [ type="text"]{
     border-radius: 10px;
     border-style: none;
     padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.363);
+    outline: none;
+}
+
+form label{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-family: var(--font-text);
+    font-weight: 600;
+    background-color: white;
+    font-size: 15px;
 }
 
 form [ type="submit"]{
@@ -213,11 +234,24 @@ form [ type="submit"]:active{
 form [ type="submit"]:hover{
     background-color: var(--cor-button-login-hover);
 }
+form [ type="password"]:focus{
+    outline: 1px solid var(--cor-button-login);
+}
+
+form [ type="text"]:focus{
+   outline: 1px solid var(--cor-button-login);
+}
 
 form img{
     display: block;
     margin: 20px auto;
     height: 150px;
+    filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, 0.486));
+    cursor: pointer;
+}
+
+form img:active{
+    transform: scale(0.97);
 }
 
 
