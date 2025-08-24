@@ -8,7 +8,7 @@
 
     /* cores */
     --cor-background:#eaf2fd;
-    --cor-primaria: #A76D2B;
+    --cor-primaria: rgb(167, 109, 43);
     --cor-secundaria: #000000;
     --cor-segundaria-hover:#111111;
     --cor-button-login: rgb(0, 94, 216);
@@ -162,23 +162,14 @@ footer{
 
 #bodyLogin{
     justify-items: center;
-    
-}
-
-#corTopBodyLogin{
-    background-color: var(--cor-primaria);
-    height: 50vh;
+    background-image: url(/images/loginPage/backgroundImage.png);
+    height: 100vh;
     width: 100%;
-    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
-#corBottomBodyLogin{
-    background-color: var(--cor-secundaria);
-    height: 50vh;
-    width: 100%;
-    display: block;
-}
 
 #mainLogin{
     margin: 0 auto;
