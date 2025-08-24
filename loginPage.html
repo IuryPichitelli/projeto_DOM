@@ -9,18 +9,16 @@
 </head>
 <body>
     <div id="mainLogin">
-        <form autocomplete="on" method="post" action="cadastro.php">
+        <form autocomplete="off" method="post" action="cadastro.php">
             <div class="loginUser">
-                <label for=""></label>
-                <input type="text" name="loginUser" id="IdLoginUser" autocomplete="username" required>
+               
+                <input type="text" name="loginUser" id="idLoginUser" required placeholder="Nome do usuário">
             </div>
             <div class="passwordUser">
-                <label for=""></label>
-                <input type="password" name="" id="IdPassowordUser">
+                <input type="password" name="" id="idPassowordUser" required placeholder="Mínimo 6 digítos">
             </div>
-            <div class="submitformUser">
+            <div class="submitUser">
                 <input type="submit" value="Login">
-                <input type="reset" value="Limpar">
             </div>
         </form>
     </div>
