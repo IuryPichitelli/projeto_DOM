@@ -16,6 +16,10 @@
     /* fontes*/
     --font-title: Georgia, 'Times New Roman', Times, serif;
     --font-text: arial, sans-serif;
+
+    /* box shadow*/
+    --box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.507);
+
 }
 
 /* ************************************* */
@@ -73,6 +77,7 @@ nav{
     background-color: var(--cor-secundaria);
     position: sticky;
     top: 0;
+    box-shadow: var(--box-shadow);
 }
 
 nav ul li a{
@@ -136,9 +141,30 @@ footer{
     background-color: var(--cor-secundaria);
     color: var(--cor-font);
     font-family: var(--font-text);
-    height: 50px;
+    height: 100px;
 }
 
 /* ************************************* */
 /*               SCROLL BAR              */
 /* ************************************* */
+
+/* ************************************* */
+/*               PAGE LOGIN              */
+/* ************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
