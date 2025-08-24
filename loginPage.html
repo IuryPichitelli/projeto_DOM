@@ -10,14 +10,15 @@
 <div id="bodyLogin">
     <div id="corTopBodyLogin"></div>
     <form autocomplete="off" method="post" action="cadastro.php">
-        <img src="images/logo/DOM_logo_300.png" alt="">
+        <img src="images/logo/DOM_logo_300.png" alt="logoDOM">
         <div class="loginUser">
             <label for="idLoginUser">NOME</label>
             <input type="text" name="loginUser" id="idLoginUser" required placeholder="Nome do usuário">
         </div>
         <div class="passwordUser">
             <label for="idPassowordUser">SENHA</label>
-            <input type="password" name="" id="idPassowordUser" required placeholder="Mínimo 6 digítos" minlength="6">
+            <input type="password" name="" id="idPassowordUser" required placeholder="Mínimo 6 digítos" minlength="6" maxlength="15" size="20">
+            <img src="images/loginPage/visibilityOff24px.svg" alt="visibilityOff">
         </div>
         <div class="submitUser">
             <input type="submit" value="LOGIN">

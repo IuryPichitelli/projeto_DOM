@@ -242,7 +242,7 @@ form [ type="text"]:focus{
    outline: 1px solid var(--cor-button-login);
 }
 
-form img{
+form > img{
     display: block;
     margin: 20px auto;
     height: 150px;
@@ -254,7 +254,16 @@ form img:active{
     transform: scale(0.97);
 }
 
+/* PASSWORD DIV*/
 
+.passwordUser img{
+    position: absolute;
+    width: 24px;
+    box-shadow: none;
+    left: 85%;
+    cursor: pointer;
+    bottom: 130px;
+}
 
 
 
