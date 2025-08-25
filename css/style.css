@@ -189,6 +189,7 @@ form{
     position: fixed;
     top: 250px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.363);
+    box-sizing: border-box;
 }
 
 form [ type="submit"] , [type="password"] , [ type="text"]{
