@@ -11,6 +11,7 @@
     --cor-primaria: rgb(167, 109, 43);
     --cor-secundaria: #000000;
     --cor-segundaria-hover:#111111;
+    --cor-cinza-claro: rgb(114, 114, 114);
     --cor-button-login: rgb(0, 94, 216);
     --cor-button-login-hover: rgb(32, 128, 255);
     --cor-font: white;
@@ -209,6 +210,7 @@ form label{
     font-weight: 600;
     background-color: white;
     font-size: 15px;
+    color: var(--cor-cinza-claro);
 }
 
 form [ type="submit"]{
