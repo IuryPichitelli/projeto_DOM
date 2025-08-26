@@ -11,3 +11,15 @@ imgVisibilityOff.addEventListener('click', function(){
     }
 
 });
+
+async function hashSenha(senha) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(senha);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  // Converter ArrayBuffer para hexadecimal
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  return hashHex;
+}
+
+hashSenha("minhaSenha123").then(console.log);
